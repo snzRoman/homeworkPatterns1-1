@@ -1,4 +1,4 @@
-public class IllegalArgumentException extends Exception{
+public class IllegalArgumentException extends Exception {
     public IllegalArgumentException() {
         super("Недопустимое значение аргумента");
     }

@@ -17,20 +17,21 @@ public class PersonBuilder {
     }
 
     public PersonBuilder setAge(int age) throws IllegalArgumentException {
-        if (age >= 0 && age < 200){
+        if (age >= 0 && age < 200) {
             newPerson.setAge(age);
-        }else throw new IllegalArgumentException();
+        } else throw new IllegalArgumentException();
         return this;
     }
+
     public PersonBuilder setAddress(String address) {
         newPerson.setAddress(address);
         return this;
     }
 
-    public Person build() throws IllegalStateException{
-        if (newPerson.getName() != null && newPerson.getSurname() != null){
+    public Person build() throws IllegalStateException {
+        if (newPerson.getName() != null && newPerson.getSurname() != null) {
             return newPerson;
-        }else throw new IllegalStateException();
+        } else throw new IllegalStateException();
     }
 
 

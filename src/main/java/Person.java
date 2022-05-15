@@ -77,7 +77,7 @@ public class Person {
                 '}';
     }
 
-    public void happyBirthday(){
+    public void happyBirthday() {
         age++;
     }
 
